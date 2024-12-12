@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400&display=swap');
+
+body{
+    font-family: 'Noto Sans kr',sans-serif;
+    margin:0;
+    background-color: #000000;
+}
+
+/* header styling */
+
+#cbnu-back-button{
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    transition: background-color 0.25s;
+}
+
+#cbnu-back-button:link {
+    color: black;
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+  
+#cbnu-back-button:visited {
+    color: black;
+    background-color: #f1f1f1;
+    text-decoration: none;
+}
+
+#cbnu-back-button:hover {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+#cbnu-back-button:active {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+#cbnu-header{
+    font-family: 'Noto Sans kr';
+    font-size: 0.80rem;
+    padding: 6px 12px;
+    background-color:white;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+
+    border-bottom: 1px solid #dfdfdf;
+
+    position:fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 10;
+    top:0;
+}
+
+#cbnu-header-inner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+#cbnu-heading-1{
+    font-size: 0.80rem;
+    font-weight: 100;
+    margin: 0;
+}
+
+#cbnu-back-button{
+    width: 4rem;
+}
+
+#cbnu-header-team{
+    width: 4rem;
+    text-align: right;
+}
+
+#cbnu-header-spacer{
+    flex-grow: 1;
+}
+
+/* end of header styling */
+
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    gap:1px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    gap: 1px;
+
+}
+
+.row > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-grow: 1;
+    flex-basis: 0;
+    gap: 1px;
+}
+
+.column > * {
+    flex-grow: 1;
+    flex-basis: 0;
+    position: relative;
+}
+
+
+  
+
+/* .title{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+.work{
+    flex-grow: 1;
+    flex-basis: 0;
+} */
+
+.work > video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.work.light{
+    color:black;
+}
+
+
+
+.cbnu-landing-heading-1{
+    margin:0;
+    font-size: 5rem;
+    line-height: 5rem;
+    font-weight: 100;
+}
+
+.cbnu-landing-heading-2{
+    margin:0;
+
+}
+
+.cbnu-landing-paragraph{
+    margin:0;
+
+}
+
+.title{
+    box-sizing: border-box;
+    /* padding: 2rem; */
+    background-color: #0a2424 ;
+    color: #79fdc1;
+}
+.title-inner{
+    box-sizing: border-box;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cbnu-landing-title-info{
+    display: flex;
+}
+
+.cbnu-landing-spacer{
+    flex-grow: 1;
+}
+
+.cbnu-label{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.cbnu-label-inner{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.cbnu-label-heading-2{
+    margin: 0;
+    font-size: 1rem;
+}
+
+.cbnu-landing-button{
+    padding: 0.75rem 1.5rem;
+    background-color: #bababa5f;
+    backdrop-filter: blur(8px);
+    border-radius: 1.5rem;
+    font-size: 0.8rem;
+    color: #000000;
+}
+
+.cbnu-label:hover{
+    cursor: pointer;
+}
+
+.cbnu-label:hover > .cbnu-label-inner > .cbnu-landing-button{
+    color: #ffffff;
+    background-color: #000000;
+    text-decoration: none;
+}
+
+.cbnu-label-link:link {
+    color: #000000;
+
+    text-decoration: none;
+}
+  
+.cbnu-label-link:visited {
+    color: #000000;
+
+    text-decoration: none;
+}
+
+.cbnu-label-link:hover {
+
+}
+
+.cbnu-label-link:active {
+    color: #000000;
+
+    text-decoration: none;
+}
+
+.work.light > .cbnu-label-link:link  {
+    color: #000000;
+
+}
+
+.work.light > .cbnu-label-link:visited  {
+    color: #000000;
+
+}
+
+.work.light > .cbnu-label-link:hover {
+    color: #000000;
+    background-color: black;
+    text-decoration: none;
+}
+
+.work.light > .cbnu-label-link:active {
+    color: #000000;
+    background-color: black;
+    text-decoration: none;
+}
+
+.work.light > .cbnu-label-link > .cbnu-label > .cbnu-label-inner > .cbnu-landing-button{
+
+
+}

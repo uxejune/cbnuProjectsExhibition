@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+   <meta charset="UTF-8"> <!-- 택스트 인코딩 포멧을 UTF-8로 선언 -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsice 디자인을 지원하기 위해 필수적인 태그-->
+   <meta name="description" content="디자이너, 이민규의 포트폴리오 사이트"> <!--검색 엔진 결과에 표시되는 페이지 설명을 제공-->
+   <meta name="author" content="Mingyu Lee"> <!-- 웹 페이지의 제작자를 표시 -->
+   <title>Mingyu Lee</title> <!-- 페이지 타이틀을 Mingyu Lee로 지정 -->
+   <link rel="icon" type="image/png" href="images/favicon.png"> <!-- favicon 설정 -->
+   <link rel="stylesheet" type="text/css" href="style/normalize.css">
+   <link rel="stylesheet" type="text/css" href="style/main.css">
+   
+   <script src="https://kit.fontawesome.com/ae75339680.js" crossorigin="anonymous"></script>
+</head>
+
+<body><!-- body 시작 -->
+   <nav class="header mobile-hidden">
+      <div class="container">
+         <ul>
+            <li><a id="name" href="#">Mingyu Lee</a></li>
+            <div class="spacer"></div>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a id="cta" href="#contact">Contact</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <nav id="my-mobile-header" class="header mobile mobile-display">
+      <div class="container">
+         <ul>
+            <li><a id="name" href="#">Mingyu Lee</a></li>
+            <div class="spacer"></div>
+            <a class="open-button" onclick="openMobileMenu()"><i class="fa-solid fa-bars"></i></a>
+            <a class="close-button" onclick="closeMobileMenu()"><i class="fa-solid fa-xmark"></i></a>
+
+         </ul>
+         <ul class="mobile-menu-item-wrapper">
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Works</a></li>
+            <li><a id="cta" href="#">Contact</a></li>
+         </ul>
+      </div>
+   </nav>
+
+   <div class="hero">
+      <div class="hero-contents">
+         <h1 id="test">I'm Mingyu Lee <img class="square" src="images/image_06.jpg">, a <img class="bigger"
+               src="images/image_07.png"><span class="hidden">UX</span>Designer with a passion🔥 for crafting <span
+               class="seamless background">seamless</span> user experiences<i class="fa-regular fa-face-smile"></i> and
+            the <i class="fa-solid fa-code"></i>technical expertise to turn those <span
+               class="background visions">visions</span> into <i class="fa-solid fa-arrow-right"></i> reality 🌏.</h1>
+      </div>
+
+   </div>
+
+   <section class="about-me">
+      <div class="container">
+         <h2>About me</h2>
+
+         <div class="cv">
+            <div class="career">
+               <h3>주요경력</h2>
+                  <ul>
+                     <li>
+                        <div class="year">2020 -</div>
+                        <div>충북대학교 디자인학과 재학중</div>
+                     </li>
+                     <li>
+                        <div class="year">2023</div>
+                        <div>Lorem 인턴 근무</div>
+                     </li>
+                     <li>
+                        <div class="year">2023</div>
+                        <div>Ipsum 공모전 대상</div>
+                     </li>
+                     <li>
+                        <div class="year">2023</div>
+                        <div>Lorem 웹디자인 재능기부 활동</div>
+                     </li>
+                     <li>
+                        <div class="year">2023</div>
+                        <div>Amet 공모전 입선</div>
+                     </li>
+                  </ul>
+            </div>
+
+            <div class="skills">
+               <h3>Skills</h2>
+                  <ul>
+                     <li>
+                        <div class="icon"><i class="fa-brands fa-figma"></i> </div>
+                        <div class="title">Figma</div>
+                        <div class="grade">
+                           <div class="advanced">
+                              Advanced
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon"><i class="fa-brands fa-react"></i></div>
+                        <div class="title">React</div>
+                        <div class="grade">
+                           <div class="intermediate">
+                              Intermediate
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon"><i class="fa-brands fa-html5"></i></div>
+                        <div class="title">HTML</div>
+                        <div class="grade">
+                           <div class="advanced">
+                              Advanced
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon"><i class="fa-brands fa-css3"></i></div>
+                        <div class="title">CSS</div>
+                        <div class="grade">
+                           <div class="advanced">
+                              Advanced
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon"><i class="fa-brands fa-js"></i></div>
+                        <div class="title">JavaScript</div>
+                        <div class="grade">
+                           <div class="intermediate">
+                              Intermediate
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon"><i class="fa-solid fa-p"></i></div>
+                        <div class="title">Photoshop</div>
+                        <div class="grade">
+                           <div class="advanced">
+                              Advanced
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon"><i class="fa-solid fa-i"></i></div>
+                        <div class="title">Illustrator</div>
+                        <div class="grade">
+                           <div class="advanced">
+                              Advanced
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+                     <li>
+                        <div class="icon"><i class="fa-solid fa-a"></i></div>
+                        <div class="title">After Effects</div>
+                        <div class="grade">
+                           <div class="intermediate">
+                              Intermediate
+                              <div class="gauge"></div>
+                           </div>
+                        </div>
+                     </li>
+
+                  </ul>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="works">
+      <div class="container">
+         <h2>Works</h2>
+         <div class="works-container">
+            <div class="works-item big">
+               <img src="images/image_01.jpg" width="100%">
+               <h3>Lorem ipsum 웹사이트 제안</h3>
+               <p>2023</p>
+            </div>
+            <div class="works-item">
+               <img src="images/image_02.jpg" width="100%">
+               <h3>Lorem ipsum 앱 디자인 제안</h3>
+               <p>2023</p>
+            </div>
+            <div class="works-item">
+               <img src="images/image_03.jpg" width="100%">
+               <h3>Lorem ipsum 브랜드 디자인 제안</h3>
+               <p>2023</p>
+            </div>
+            <div class="works-item">
+               <img src="images/image_04.jpg" width="100%">
+               <h3>Lorem ipsum 광고 영상 제안</h3>
+               <p>2023</p>
+            </div>
+            <div class="works-item">
+               <img src="images/image_01.jpg" width="100%">
+               <h3>Lorem ipsum 웹사이트 제안</h3>
+               <p>2023</p>
+            </div>
+         </div>
+   </section>
+
+   <section>
+      <div id="contact" class="container contact-wrapper">
+         <div data-tf-live="01JE9EFXW4B128G90ADZQ8Z0NZ"></div><script src="https://embed.typeform.com/next/embed.js"></script>
+      </div>
+   </section>
+
+   <section class="footer">
+      <p>&#9426; 2024 Mingyu Lee - All Rights Reserved </p>
+   </section>
+   <script src="script/script.js"></script><!-- JavaScript -->
+   <script src="../../script/home.js"></script>
+</body><!-- body 끝 -->
+
+</html><!-- html 끝 -->
